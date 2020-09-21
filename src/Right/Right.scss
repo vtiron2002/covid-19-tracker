@@ -1,0 +1,33 @@
+@import '../vars.scss';
+
+.right {
+  flex: 1;
+  background: white;
+  padding: 1em;
+  border-radius: $borderRadius;
+  max-width: 100vw;
+
+  &__title {
+    font-weight: 300;
+  }
+
+  ul.countries {
+    list-style-type: none;
+    overflow-y: auto;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+
+    > li:nth-child(odd) {
+      background: rgb(236, 236, 236);
+    }
+
+    .country {
+      display: flex;
+      justify-content: space-between;
+      color: gray;
+      padding: 0.5em;
+    }
+  }
+}
